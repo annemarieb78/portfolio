@@ -83,6 +83,191 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body {
+  margin: 0;
+  font-size: 1em;
+  font-family: "Open Sans", sans-serif;
+  color: #453e4f;
+  background-color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Alike", serif;
+}
+
+a {
+  text-decoration: none;
+  color: #453e4f;
+}
+
+p {
+  font-size: 0.75em;
+  width: 95%;
+}
+
+/* img {
+  width: 100%;
+} */
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90vw;
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: #f19494;
+}
+
+.navbar {
+  display: flex;
+  padding: 30px 0 60px 0;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 95vw;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  font-size: 0.75em;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+header h1 {
+  font-size: 1.75em;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+header h2 {
+  font-size: 1.15em;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio-header {
+  font-size: 2em;
+  font-weight: normal;
+  margin: 50px 0 20px;
+}
+
+span {
+  font-weight: bold;
+}
+
+.portfolio {
+  display: flex;
+  background-color: #fff;
+}
+
+.portfolio-piece {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio-piece h4 {
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+
+.portfolio-piece figure img {
+  /* object-fit: cover;
+  width: 250px;
+  height: 250px;
+  margin: 20px 0; */
+
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.portfolio-piece figure {
+  width: 80%;
+  height: 5%;
+  margin-bottom: 20px;
+}
+
+.project-description {
+  margin: 40px 0 30px;
+}
+
+.project-link {
+  margin: 40px 0;
+  padding: 12px 60px;
+  text-transform: uppercase;
+  font-size: 1.125em;
+  background-color: #453e4f;
+  color: #fff;
+  border-radius: 30px;
+}
+
+.project-link:hover {
+  background-color: #cac4d1;
+  color: #453e4f;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills-header {
+  font-size: 1.5em;
+  margin: 50px 0 0;
+}
+
+.aboutme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-photo img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.aboutme h4 {
+  width: 95%;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 /* ==========================================================================
    Helper classes
@@ -244,4 +429,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
