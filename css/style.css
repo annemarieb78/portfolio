@@ -225,6 +225,10 @@ span {
   margin: 40px 0 30px;
 }
 
+.flex-fill {
+  flex-grow: 1;
+}
+
 .project-link {
   margin: 40px 0;
   padding: 12px 60px;
@@ -554,11 +558,6 @@ footer ul {
   .language-wrapper,
   .tool-wrapper {
     width: 65%;
-  }
-
-  .language-wrapper p,
-  .tool-wrapper p {
-    width: 27%;
   }
 
   .project-link {
