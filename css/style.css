@@ -104,13 +104,9 @@ a {
 }
 
 p {
-  font-size: 0.75em;
+  font-size: 1em;
   width: 95%;
 }
-
-/* img {
-  width: 100%;
-} */
 
 figure {
   margin: 0;
@@ -129,7 +125,7 @@ header {
   display: flex;
   justify-content: center;
   text-align: center;
-  background-color: #f19494;
+  background-color: #cac691;
 }
 
 .navbar {
@@ -187,6 +183,7 @@ span {
 
 .portfolio {
   display: flex;
+
   background-color: #fff;
 }
 
@@ -194,6 +191,7 @@ span {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: fit-content;
 }
 
 .portfolio-piece h4 {
@@ -202,20 +200,25 @@ span {
   padding: 0;
 }
 
-.portfolio-piece figure img {
-  /* object-fit: cover;
-  width: 250px;
-  height: 250px;
-  margin: 20px 0; */
-
-  max-width: 100%;
-  max-height: 100%;
+.portfolio-piece figure {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  filter: drop-shadow(1px 2px 6px grey);
 }
 
-.portfolio-piece figure {
-  width: 80%;
-  height: 5%;
-  margin-bottom: 20px;
+.portfolio-piece figure a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+}
+
+.portfolio-piece figure a img {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .project-description {
@@ -227,25 +230,48 @@ span {
   padding: 12px 60px;
   text-transform: uppercase;
   font-size: 1.125em;
-  background-color: #453e4f;
+  background-color: #152a3e;
   color: #fff;
   border-radius: 30px;
 }
 
 .project-link:hover {
-  background-color: #cac4d1;
+  background-color: #b4c7d9;
   color: #453e4f;
 }
 
 .skills {
+  background-color: #f7ebeb;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-flow: row wrap;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 80px;
 }
 
 .skills-header {
-  font-size: 1.5em;
-  margin: 50px 0 0;
+  font-size: 2em;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.language-wrapper,
+.tool-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+
+.language-wrapper p,
+.tool-wrapper p {
+  background-color: #152a3e;
+  color: #f7ebeb;
+  text-transform: uppercase;
+  padding: 15px 0;
+  margin: 20px 0;
 }
 
 .aboutme {
@@ -254,19 +280,71 @@ span {
   align-items: center;
 }
 
+.profile-photo {
+  display: flex;
+  justify-content: center;
+}
+
 .profile-photo img {
   object-fit: cover;
-  width: 100%;
+  width: 95%;
+  margin: 30px;
+}
+
+.aboutme h3 {
+  font-size: 1.75em;
 }
 
 .aboutme h4 {
   width: 95%;
+  font-size: 1.25em;
+  text-align: center;
 }
 
 footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#contact {
+  background-color: #cac691;
+  padding: 40px 0;
+  text-align: center;
+}
+
+#contact h3 {
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+#contact h5 {
+  font-size: 1.5em;
+  font-family: "Alike", serif;
+}
+
+#contact p {
+  margin: 8px 0;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer .social-icons li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .social-icons li a i {
+  font-size: 3rem;
+  color: #453e4f;
+}
+
+footer ul {
+  width: 100%;
 }
 
 /* ==========================================================================
@@ -352,8 +430,156 @@ footer {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media all and (min-width: 768px) {
+  /* Style adjustments for tablet */
+  body {
+    font-size: 1.25em;
+  }
+
+  p {
+    font-size: 0.85em;
+    width: 95%;
+  }
+
+  .content-wrapper {
+    display: flex;
+    width: 95vw;
+    overflow: hidden;
+  }
+
+  header {
+    padding: 60px 0 80px 0;
+  }
+
+  header h2 {
+    width: 70%;
+  }
+
+  .navbar ul {
+    width: 75vw;
+  }
+
+  header nav ul li {
+    font-size: 0.85em;
+  }
+
+  .portfolio-header {
+    padding: 30px 0 60px;
+  }
+
+  .portfolio-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+  }
+
+  .portfolio-piece {
+    width: 40%;
+  }
+
+  .project-description {
+    height: 120px;
+  }
+
+  .portfolio-piece h4 {
+    font-size: 1.25em;
+  }
+
+  .language-wrapper,
+  .tool-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+  }
+
+  .language-wrapper p,
+  .tool-wrapper p {
+    width: 45%;
+  }
+
+  .profile-photo {
+    width: 60%;
+  }
+
+  .aboutme h3 {
+    font-size: 2.5em;
+  }
+
+  .aboutme h4 {
+    font-size: 1em;
+  }
+
+  .contact-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    width: 95%;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 32.5%;
+  }
+
+  #contact {
+    padding: 20px 0 0 0;
+  }
+
+  footer .social-icons {
+    justify-content: space-evenly;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  /* Style adjustments for desktop */
+  header nav ul li {
+    font-size: 1em;
+  }
+
+  .portfolio-wrapper {
+    width: 85%;
+  }
+
+  .portfolio-piece {
+    width: 30%;
+  }
+
+  .portfolio-piece p {
+    font-size: 0.9em;
+    width: 100%;
+  }
+
+  .language-wrapper,
+  .tool-wrapper {
+    width: 65%;
+  }
+
+  .language-wrapper p,
+  .tool-wrapper p {
+    width: 27%;
+  }
+
+  .project-link {
+    margin: 40px 0 150px 0;
+  }
+
+  .profile-photo {
+    width: 30%;
+  }
+
+  .aboutme p {
+    width: 50%;
+  }
+
+  .contact-info {
+    width: 25%;
+  }
+
+  footer .social-icons {
+    justify-content: space-evenly;
+  }
 }
 
 @media print,
