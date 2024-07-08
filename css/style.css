@@ -125,19 +125,8 @@ header {
   display: flex;
   justify-content: center;
   text-align: center;
-  background-color: #cac691;
-}
-
-.navbar {
-  display: flex;
-  text-align: center;
-  padding: 30px 0 60px 0;
-}
-
-.navbar ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background-color: #e8f0e4;
+  padding-top: 30px;
 }
 
 ul {
@@ -146,21 +135,35 @@ ul {
   padding: 0;
 }
 
+header nav {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  padding-bottom: 40px;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 12px;
+}
+
 header nav ul li {
   font-size: 0.75em;
-  margin: 15px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
 header nav ul li a {
-  display: flex;
-  /* padding: 15px; */
+  padding: 5px;
   border-radius: 30px;
 }
 
 header nav ul li a:hover {
-  background-color: #e7e5cb;
+  background-color: #f48edc;
 }
 
 header h1 {
@@ -239,18 +242,18 @@ span {
 }
 
 .project-link {
-  margin: 40px 0;
+  margin: 40px 0 30px 0;
   padding: 12px 60px;
   text-transform: uppercase;
   font-size: 1.125em;
-  background-color: #152a3e;
+  background-color: #351d77;
   color: #fff;
   border-radius: 30px;
 }
 
 .project-link:hover {
-  background-color: #b4c7d9;
-  color: #453e4f;
+  background-color: #d4d3e9;
+  color: #351d77;
 }
 
 .skills {
@@ -259,8 +262,8 @@ span {
   text-align: center;
   flex-flow: row wrap;
   width: 100%;
-  padding-top: 20px;
-  padding-bottom: 80px;
+  padding: 30px 0 80px 0;
+  background-color: #e8f0e4;
 }
 
 .skills-header {
@@ -286,7 +289,7 @@ span {
 
 .language-wrapper p,
 .tool-wrapper p {
-  background-color: #152a3e;
+  background-color: #351d77;
   color: #f7ebeb;
   text-transform: uppercase;
   margin: 20px 0;
@@ -301,7 +304,7 @@ span {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 80px 0 80px 0;
+  padding: 50px 0 80px 0;
 }
 
 .profile-photo {
@@ -313,6 +316,13 @@ span {
   object-fit: cover;
   width: 95%;
   margin: 0 0 40px 0;
+}
+
+.about-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .aboutme h3 {
@@ -341,7 +351,7 @@ footer {
 }
 
 #contact {
-  background-color: #cac691;
+  background-color: #e8f0e4;
   padding: 80px 0 60px 0;
   text-align: center;
 }
@@ -382,7 +392,9 @@ footer ul {
 }
 
 .copyright {
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  width: 95%;
   margin: 60px 0 0 0;
 }
 
@@ -503,12 +515,12 @@ footer ul {
     margin: 0;
   }
 
-  .navbar ul {
-    width: 80vw;
+  header nav ul li {
+    font-size: 0.75em;
   }
 
-  header nav ul li {
-    font-size: 0.85em;
+  header nav ul li a {
+    padding: 15px;
   }
 
   .portfolio-header {
@@ -525,6 +537,10 @@ footer ul {
   .portfolio-piece {
     width: 40%;
     padding-bottom: 80px;
+  }
+
+  .portfolio-piece figure a {
+    width: 100%;
   }
 
   .project-description {
@@ -544,12 +560,12 @@ footer ul {
     margin: 40px 0 0 0;
   }
 
-  #skills h4 {
+  .skills h4 {
     padding: 20px 0 30px 0;
   }
 
-  #skills {
-    padding: 0 0 100px 0;
+  .skills {
+    padding: 40px 0 100px 0;
   }
 
   .language-wrapper,
@@ -583,7 +599,7 @@ footer ul {
   }
 
   .aboutme h4 {
-    font-size: 1em;
+    font-size: 1.5em;
     width: 80%;
   }
 
@@ -617,6 +633,15 @@ footer ul {
     justify-content: space-evenly;
   }
 
+  .contact-info a {
+    padding: 10px;
+    border-radius: 15px;
+  }
+
+  .contact-info a:hover {
+    background-color: #f48edc;
+  }
+
   .copyright {
     margin: 80px 0 0 0;
   }
@@ -629,6 +654,10 @@ footer ul {
     display: flex;
     justify-content: flex-end;
     max-width: 70%;
+  }
+
+  header {
+    padding: 50px 0 140px 0;
   }
 
   header nav {
@@ -649,8 +678,13 @@ footer ul {
     width: 85%;
   }
 
+  .portfolio-header {
+    padding-top: 140px;
+  }
+
   .portfolio-piece {
     width: 30%;
+    padding-bottom: 60px;
   }
 
   .portfolio-piece p {
@@ -664,15 +698,47 @@ footer ul {
   }
 
   .project-link {
-    margin: 40px 0 150px 0;
+    margin: 40px 0 0 0;
+  }
+
+  .skills {
+    padding: 60px 0 140px 0;
+  }
+
+  .aboutme .content-wrapper {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 140px 0;
+  }
+
+  .aboutme {
+    padding: 0;
   }
 
   .profile-photo {
-    width: 30%;
+    max-width: 550px;
+    padding: 0;
+  }
+
+  .about-info {
+    text-align: left;
+    align-items: start;
+    width: 70%;
+    max-width: 600px;
+    padding-left: 30px;
+  }
+
+  .aboutme h4 {
+    width: 90%;
   }
 
   .aboutme p {
-    width: 50%;
+    width: 90%;
+  }
+
+  #skills h4 {
+    padding: 40px 0 30px;
   }
 
   .contact-info {
