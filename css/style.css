@@ -323,7 +323,7 @@ span {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  text-align: start;
 }
 
 .aboutme h3 {
@@ -370,6 +370,12 @@ footer {
 
 #contact p {
   margin: 8px 0;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 footer .social-icons {
