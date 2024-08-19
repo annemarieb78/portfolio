@@ -431,10 +431,6 @@ footer ul {
   width: 100%;
 }
 
-footer span {
-  font-size: 1.05em;
-}
-
 .copyright {
   display: flex;
   justify-content: center;
@@ -709,27 +705,31 @@ footer span {
   /* Style adjustments for desktop */
 
   /* Header */
+
+  header {
+    height: 550px;
+  }
+
   header .content-wrapper {
     display: flex;
     justify-content: flex-end;
     max-width: 75%;
-  }
-
-  header {
-    padding: 50px 0 140px 0;
+    padding-top: 120px;
   }
 
   header nav {
     align-self: flex-end;
-    width: 30vw;
+    width: 40vw;
   }
 
   header h1 {
-    font-size: 3em;
+    font-size: 2.5em;
   }
 
   header h2 {
     font-size: 1.75em;
+    width: 100%;
+    padding-bottom: 120px;
   }
 
   header nav ul li {
@@ -764,6 +764,15 @@ footer span {
     margin: 40px 0 0 0;
   }
 
+  /* Skills */
+  .skills {
+    padding: 140px 0 140px 0;
+  }
+
+  .language-wrapper {
+    max-width: 70%;
+  }
+
   /* About */
   .aboutme .content-wrapper {
     flex-direction: row;
@@ -795,19 +804,6 @@ footer span {
 
   .aboutme p {
     width: 90%;
-  }
-
-  /* Skills */
-  .skills {
-    padding: 60px 0 140px 0;
-  }
-
-  .language-wrapper {
-    max-width: 70%;
-  }
-
-  #skills h4 {
-    padding: 40px 0 0 0;
   }
 
   /* Footer */
