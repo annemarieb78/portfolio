@@ -712,7 +712,7 @@ footer span {
   header .content-wrapper {
     display: flex;
     justify-content: flex-end;
-    max-width: 70%;
+    max-width: 75%;
   }
 
   header {
@@ -734,7 +734,7 @@ footer span {
 
   header nav ul li {
     margin: 0;
-    font-size: 0.65em;
+    font-size: 0.8em;
   }
 
   header nav ul li a {
@@ -747,7 +747,7 @@ footer span {
   }
 
   .portfolio-header {
-    padding-top: 140px;
+    padding-top: 20px;
   }
 
   .portfolio-piece {
@@ -762,11 +762,6 @@ footer span {
 
   .project-link {
     margin: 40px 0 0 0;
-  }
-
-  /* Skills */
-  .skills {
-    padding: 60px 0 140px 0;
   }
 
   /* About */
@@ -802,8 +797,17 @@ footer span {
     width: 90%;
   }
 
+  /* Skills */
+  .skills {
+    padding: 60px 0 140px 0;
+  }
+
+  .language-wrapper {
+    max-width: 70%;
+  }
+
   #skills h4 {
-    padding: 40px 0 30px;
+    padding: 40px 0 0 0;
   }
 
   /* Footer */
