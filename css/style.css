@@ -320,7 +320,7 @@ header h2 {
   margin: 20px 0;
 }
 
-.tool-wrapper p span {
+.skill span {
   text-transform: lowercase;
 }
 
@@ -328,8 +328,8 @@ header h2 {
   font-size: 3em;
 }
 
-.skill img {
-  width: 75px;
+.skill-icon img {
+  width: 65px;
 }
 
 /* About */
@@ -348,6 +348,7 @@ header h2 {
 .profile-photo img {
   object-fit: cover;
   width: 95%;
+  max-width: 400px;
   margin: 0 0 40px 0;
 }
 
@@ -356,17 +357,18 @@ header h2 {
   flex-direction: column;
   align-items: center;
   text-align: start;
+  max-width: 600px;
 }
 
 .aboutme h3 {
   font-size: 1.75em;
-  margin: 0 0 60px 0;
+  margin: 0 0 20px 0;
 }
 
 .aboutme h4 {
   width: 95%;
   font-size: 1.25em;
-  margin: 0 0 40px 0;
+  margin: 0 0 20px 0;
 }
 
 .aboutme p span {
@@ -567,7 +569,7 @@ footer ul {
 
   /* Projects */
   .portfolio {
-    padding: 120px 0 80px;
+    padding: 120px 0 0 0;
   }
   .portfolio-header {
     margin: 0;
@@ -582,7 +584,7 @@ footer ul {
 
   .portfolio-piece {
     width: 40%;
-    padding-bottom: 80px;
+    padding-bottom: 120px;
   }
 
   .portfolio-piece figure a {
@@ -644,20 +646,7 @@ footer ul {
 
   .profile-photo {
     width: 60%;
-    padding-bottom: 80px;
-  }
-
-  .aboutme h3 {
-    font-size: 2.5em;
-  }
-
-  .aboutme h4 {
-    font-size: 1.5em;
-    width: 80%;
-  }
-
-  .aboutme p {
-    width: 80%;
+    padding-bottom: 60px;
   }
 
   /* Footer */
@@ -752,7 +741,6 @@ footer ul {
 
   .portfolio-piece {
     width: 30%;
-    padding-bottom: 60px;
   }
 
   .portfolio-piece p {
@@ -798,7 +786,12 @@ footer ul {
     padding-left: 30px;
   }
 
+  .aboutme h3 {
+    font-size: 2em;
+  }
+
   .aboutme h4 {
+    font-size: 1.15em;
     width: 90%;
   }
 
